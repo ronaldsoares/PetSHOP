@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="js/script.js">
+    <title>Pet - Shop</title>
+
+    
+  </head>
+
+  <body>
+    <header id="header">
+        <h1 title="mary & gaby petshop">
+          <img
+            src="img/logo-mari-e-gabi-petshop.svg"
+            alt="logo-mari-e-gabi-petshop"
+          />
+        </h1>
+        <nav id="nav">
+          <button id="btn-mobile">Menu
+
+            <span id="hamburguer"></span>
+          </button>
+          <ul id="menu">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#produto">Produtos</a></li>
+            <li><a href="#servico">Serviços</a></li>
+            <li id="itemcontato"><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </header> 
+    <section class="fundo-verde" id="sobre">
+      <div class="container flex-container ">
+        <div class="col">
+          <h2>Sobre nós</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+            dolorum quo laborum odio, debitis culpa voluptatum ut omnis adipisci
+            dignissimos! Veniam a quisquam illo non dolores quos porro aliquid
+            sequi?
+          </p>
+          <p >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum
+            expedita molestias repellendus. Officiis illum repudiandae
+            aspernatur vero sed magnam quam atque cumque? Eum repudiandae iste
+            quidem, esse consectetur dolor.
+          </p>
+        </div>
+
+        <div class="col">
+          <img class="img1" src="img/img-sobre.jpg" alt="Cachorros em um cesto" />
+        </div>
+      </div>
+    </section>
+
+    <div class="container" id="produto">
+      <h2 class="texto-centralizado">Produtos</h2>
+      <p class="texto-centralizado">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ipsum.
+        Incidunt sint veniam soluta aperiam nesciunt, cum voluptat ibus
+        repellendus esse. Laborum unde nulla esse facilis dignissimos
+        repellendus quas veritatis deleniti.
+      </p>
+
+      <div class="flex-container">
+        <section class="produto" >
+          <figure>
+            <img src="img/produto-1.jpg" alt="img produto-1" />
+          </figure>
+          
+          <h3>Previn shapoo</h3>
+          <p>R$ 150,00</p>
+          <a href="#" class="btn-pata">
+            <img src="img/patinha-preta.png" alt="patinha-preta" />
+            Comprar
+          </a>
+          
+        </section>
+
+        <section class="produto">
+          <figure>
+            <img src="img/produto-2.jpg" alt="img produto-2" />
+          </figure>
+          <h3>Casa Pet - media</h3>
+          <p>R$ 380,00</p>
+          <a href="#" class="btn-pata">
+            <img src="img/patinha-preta.png" alt="patinha-preta" />
+            Comprar
+          </a>
+        </section>
+
+        <section class="produto">
+          <figure>
+            <img src="img/produto-3.jpg" alt="img produto-3" />
+          </figure>
+          <h3>Pote para ração</h3>
+          <p>R$ 70,00</p>
+          <a href="#" class="btn-pata" onclick="comprar()">
+            <img src="img/patinha-preta.png" alt="patinha-preta" />
+            Comprar
+          </a>
+        </section>
+      </div>
+    </div>
+    <section class="fundo-verde" id="servico">
+      <div class="container flex-container">
+        <div class="col">
+          <h2>Serviços</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Repellendus sint dolore iusto error nulla nam quo facere! Iste dolor
+            similique dolores nesciunt ex, sit, repellendus officia molestias
+            sed eveniet possimus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
+            distinctio facere eos cumque aliquid explicabo dolor cum. Provident
+            totam excepturi omnis laboriosam repellendus deserunt architecto
+            nulla illo dolorem? Ipsa, earum!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            possimus nihil debitis consequatur. Doloremque consequatur rem
+            corrupti porro, ad libero, ut, similique impedit numquam amet eius
+            illo optio adipisci quos.
+          </p>
+        </div>
+        <div class="col">
+          <img src="img/img-galeria-2.jpg" alt="" />
+          <img src="img/img-galeria-2.jpg" alt="" />
+          <img src="img/img-galeria-3.jpg" alt="" />
+          <img src="img/img-galeria-4.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <h2 class="texto-centralizado" id="contato">Contato</h2>
+      <p class="texto-centralizado">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse earum
+        architecto quos eveniet voluptas repudiandae facilis laboriosam.
+        Deleniti est in, minima ipsa, deserunt harum doloremque aspernatur
+        architecto enim exercitationem fuga.
+      </p>
+    </div>
+    
+    <div class="container flex-container">
+        <div class="col">
+            <form>
+                <div>
+                    <label for="ctext" >Nome</label><br>
+                    <input type="text" id="ctext" placeholder="Insira seu nome completo..."/>
+                </div>
+                <br>
+                <div>
+                    <label for="cmail">E-mail</label><br>
+                    <input type="email" name="cmail" placeholder="exemplo@teste.com.br"/>
+                </div>
+                <br>
+                <div>
+                    <label for="cphone">Telefone</label><br>
+                    <input type="number" id="cphone" name="cphone" placeholder="(11)0000-0000 ou (11)90000-0000"/>
+                </div>
+                <br>
+                <div>
+                    <label for="">Assunto</label><br>
+                    <input type="text" placeholder="Insira aqui o assusnto da mensagem" maxlength="20"/>
+                </div>
+                <br>
+                <div>
+                    <label for="">Mensagem</label><br>
+                    <textarea type="text" placeholder="Insira aqui sua mensagem" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                
+                <div>
+                    <button class="btn-form" type="submit" value="enviar" onclick="enviar()">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14618.063217128005!2d-46.757523!3d-23.657505299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1667697254498!5m2!1spt-BR!2sbr" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>  
+    <div class="linha"></div>
+    <footer>
+        <div >
+            <p class="texto-centralizado"> Copyright ©2022 Mary e Gabi | Todos os direitos reservados</p> <!--Alt 0169 -simbolo de copyright-->
+        </div>
+    </footer> 
+    <script type="text/javascript" src="js/script.js">
+      
+    </script>
+</body>
+</html>
